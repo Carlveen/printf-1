@@ -21,7 +21,7 @@ int _printf(const char *format, ...)
 	}
 	for (i = 0; i < len; i++)
 	{
-		if (str[i] == '%')
+		if (str[i] == '%' && str[i] != '\0')
 		{
 			i++;
 			if (str[i] == 'c')
