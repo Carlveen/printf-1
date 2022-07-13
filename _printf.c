@@ -7,14 +7,12 @@
 int _printf(const char *format, ...)
 {
 	int len, i = 0;
-	int *integer;
-	unsigned int ptr;
-	char *s;
+	char *str;
 	va_list list;
 
 	va_start(list, format);
 	len = strlen(format);
-	char *str = malloc(sizeof(format) * len);
+	str = malloc(sizeof(format) * len);
 
 	while (i < len)
 	{
