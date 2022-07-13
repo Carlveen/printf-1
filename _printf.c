@@ -28,7 +28,6 @@ int _printf(const char *format, ...)
 			if (str[i] == 'c')
 			{
 				_putchar(va_arg(list, int));
-				j++;
 			}
 			else if (str[i] == 'd' || str[i] == 'i')
 			{
