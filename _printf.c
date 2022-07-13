@@ -42,6 +42,7 @@ int _printf(const char *format, ...)
 		else
 			_putchar(str[i]);
 	}
+	str[len] = '\0';
 	va_end(list);
 	return (i);
 }
